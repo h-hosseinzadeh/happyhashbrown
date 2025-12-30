@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  background: #415a6c; /* your sky color */
+  overflow-x: hidden;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.parallax {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+.layer {
+  position: absolute;
+  inset: 0;
+  background-repeat: repeat-x;
+  background-position: bottom center;
+  will-change: transform;
+}
+
+.layer-1 { background-image: url("../assets/images/parallax/layer-1.png"); }
+.layer-2 { background-image: url("../assets/images/parallax/layer-2.png"); }
+.layer-3 { background-image: url("../assets/images/parallax/layer-3.png"); }
+.layer-4 { background-image: url("../assets/images/parallax/layer-4.png"); }
+.layer-5 { background-image: url("../assets/images/parallax/layer-5.png"); }
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  color: white;
+  text-align: center;
+}
