@@ -5,6 +5,6 @@ window.addEventListener("scroll", () => {
 
   layers.forEach(layer => {
     const speed = layer.dataset.speed;
-    layer.style.transform = `translateY(${scrollY * speed}px)`;
+    layer.style.transform = `translateY(${-scrollY * speed}px)`;
   });
 });

@@ -19,16 +19,19 @@ body {
 .layer {
   position: absolute;
   inset: 0;
+  height: 100%;
   background-repeat: repeat-x;
   background-position: bottom center;
+  background-size: cover;
   will-change: transform;
 }
 
-.layer-1 { background-image: url("../assets/images/parallax/layer-1.png"); }
-.layer-2 { background-image: url("../assets/images/parallax/layer-2.png"); }
-.layer-3 { background-image: url("../assets/images/parallax/layer-3.png"); }
-.layer-4 { background-image: url("../assets/images/parallax/layer-4.png"); }
-.layer-5 { background-image: url("../assets/images/parallax/layer-5.png"); }
+/* .layer-1 { background-image: url("../assets/images/parallax/layer-1.png"); } */
+.layer-1 { background: linear-gradient(#2b3a42, #1e2a30); }
+.layer-2 { background: linear-gradient(to top, #12091f, #1b0f33, #24124a); }
+.layer-3 { background: linear-gradient(to top, #1a1238, #2a1b5e, #3b2b7a); }
+.layer-4 { background: linear-gradient(to top, #2b1b55, #3f2a8a, #5b3fc4); }
+.layer-5 { background: linear-gradient(to top, #3a1b6e, #6a2fcf, #9b4dff); }
 
 .hero-content {
   position: relative;
