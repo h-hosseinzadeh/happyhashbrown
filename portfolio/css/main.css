@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background: #415a6c; /* your sky color */
+  background: #415a6c;
   overflow-x: hidden;
 }
 
@@ -10,28 +10,53 @@ body {
   overflow: hidden;
 }
 
+main {
+  height: 200vh;
+  background: #0b0f1a;
+}
+
 .parallax {
   position: fixed;
   inset: 0;
   pointer-events: none;
 }
 
-.layer {
+.parallax_layer {
   position: absolute;
   inset: 0;
-  height: 100%;
-  background-repeat: repeat-x;
-  background-position: bottom center;
-  background-size: cover;
+  bottom: 0;
   will-change: transform;
 }
 
-/* .layer-1 { background-image: url("../assets/images/parallax/layer-1.png"); } */
-.layer-1 { background: linear-gradient(#2b3a42, #1e2a30); }
-.layer-2 { background: linear-gradient(to top, #12091f, #1b0f33, #24124a); }
-.layer-3 { background: linear-gradient(to top, #1a1238, #2a1b5e, #3b2b7a); }
-.layer-4 { background: linear-gradient(to top, #2b1b55, #3f2a8a, #5b3fc4); }
-.layer-5 { background: linear-gradient(to top, #3a1b6e, #6a2fcf, #9b4dff); }
+.parallax_layer:nth-child(1) {
+  z-index: 1;
+  height:100%;
+  background: linear-gradient(#2b3a42, #1e2a30);
+}
+
+.parallax_layer:nth-child(2) {
+  z-index: 2;
+  height:80%;
+  background: linear-gradient(to top, #12091f, #1b0f33, #24124a);
+}
+
+.parallax_layer:nth-child(3) {
+  z-index: 3;
+  height:65%;
+  background: linear-gradient(to top, #1a1238, #2a1b5e, #3b2b7a);
+}
+
+.parallax_layer:nth-child(4) {
+  z-index: 4;
+  height:45%;
+  background: linear-gradient(to top, #2b1b55, #3f2a8a, #5b3fc4);
+}
+
+.parallax_layer:nth-child(5) {
+  z-index: 5;
+  height:30%;
+  background: linear-gradient(to top, #3a1b6e, #6a2fcf, #9b4dff);
+}
 
 .hero-content {
   position: relative;

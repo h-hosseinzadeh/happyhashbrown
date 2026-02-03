@@ -1,4 +1,4 @@
-const layers = document.querySelectorAll(".layer");
+const layers = document.querySelectorAll(".parallax_layer");
 
 window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;

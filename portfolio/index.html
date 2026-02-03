@@ -1,91 +1,21 @@
-<body style="margin:0; background:#415a6c; overflow-x:hidden;">
-
-  <section class="hero" style="position:relative; height:100vh; overflow:hidden;">
-    <div class="parallax" style="position:fixed; inset:0; pointer-events:none; z-index:0;">
-
-      <div
-        class="layer"
-        data-speed="0.1"
-        style="
-          position:absolute;
-          inset:0;
-          height:100%;
-          z-index:1;
-          background:linear-gradient(#2b3a42, #1e2a30);
-        ">
-      </div>
-
-      <div
-        class="layer"
-        data-speed="0.2"
-        style="
-          position:absolute;
-          bottom:0;
-          height:80%;
-          width:100%;
-          z-index:2;
-          background:linear-gradient(to top, #12091f, #1b0f33, #24124a);
-        ">
-      </div>
-
-      <div
-        class="layer"
-        data-speed="0.35"
-        style="
-          position:absolute;
-          bottom:0;
-          height:65%;
-          width:100%;
-          z-index:3;
-          background:linear-gradient(to top, #1a1238, #2a1b5e, #3b2b7a);
-        ">
-      </div>
-
-      <div
-        class="layer"
-        data-speed="0.5"
-        style="
-          position:absolute;
-          bottom:0;
-          height:45%;
-          width:100%;
-          z-index:4;
-          background:linear-gradient(to top, #2b1b55, #3f2a8a, #5b3fc4);
-        ">
-      </div>
-
-      <div
-        class="layer"
-        data-speed="0.7"
-        style="
-          position:absolute;
-          bottom:0;
-          height:30%;
-          width:100%;
-          z-index:5;
-          background:linear-gradient(to top, #3a1b6e, #6a2fcf, #9b4dff);
-        ">
-      </div>
-
+<link rel="stylesheet" href="css/main.css" />
+<body>
+  <section class="hero">
+    <div class="parallax">
+      <div class="parallax_layer" data-speed="0.1"></div>
+      <div class="parallax_layer" data-speed="0.2"></div>
+      <div class="parallax_layer" data-speed="0.35"></div>
+      <div class="parallax_layer" data-speed="0.5"></div>
+      <div class="parallax_layer" data-speed="0.7"></div>
     </div>
 
-    <div
-      class="hero-content"
-      style="
-        position:relative;
-        z-index:10;
-        height:100%;
-        display:grid;
-        place-content:center;
-        color:white;
-        text-align:center;
-      ">
+    <div class="hero-content">
       <h1>Tokyo wa totemo kirei na mashi desu</h1>
       <p>El Homme</p>
     </div>
   </section>
 
-  <main style="height:200vh; background:#0b0f1a;"></main>
+  <main></main>
 
   <script src="js/parallax.js"></script>
 </body>
