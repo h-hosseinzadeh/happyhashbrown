@@ -1,10 +1,14 @@
 const layers = document.querySelectorAll(".parallax_layer");
+let lastScrollY = 0;
 
 window.addEventListener("scroll", () => {
-  const scrollY = window.scrollY;
-
-  layers.forEach(layer => {
-    const speed = layer.dataset.speed;
-    layer.style.transform = `translateY(${-scrollY * speed}px)`;
-  });
+  lastScrollY = window.scrollY;
+  requestAnimationFrame(updateParallax);
 });
+
+function updateParallax() {
+  layers.forEach(layer => {
+    const speed = Number(layer.dataset.speed);
+    layer.style.transform = `translateY(${-lastScrollY * speed}px)`;
+  });
+}
