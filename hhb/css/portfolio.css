@@ -15,19 +15,29 @@ body {
 }
 
 .portfolio-header {
-  padding: 4rem 2rem 2rem;
+  padding: 6rem 2rem 3rem;
   text-align: center;
 }
 
 .portfolio-header h1 {
-  margin: 0;
-  font-size: 3rem;
-  letter-spacing: 0.05em;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
 }
 
 .portfolio-header p {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
   opacity: 0.7;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.header-accent {
+  width: 120px;
+  height: 2px;
+  margin: 2rem auto 0;
+  background: linear-gradient(90deg, transparent, #6a2fcf, transparent);
 }
 
 .masonry {
