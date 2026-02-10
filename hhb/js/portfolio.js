@@ -1,10 +1,10 @@
-const gallery = document.getElementById('.gallery');
+const gallery = document.getElementById('gallery');
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightbox-img');
 const lightboxTitle = document.getElementById('lightbox-title');
 const lightboxCaption = document.getElementById('lightbox-caption');
 
-fetch("artworks.json")
+fetch("js/artworks.json")
     .then(res => res.json())
     .then(artworks => {
         artworks.forEach(art => {
@@ -29,15 +29,3 @@ lightbox.addEventListener('click', () => {
     lightbox.classList.remove('active');
     lightboxImg.src = '';
 });
-
-// document.querySelectorAll(".masonry img").forEach(img => {
-//     img.addEventListener('click', () => {
-//         lightboxImg.src = img.src;
-//         lightbox.classList.add('active');
-//     })
-// })
-
-// lightbox.addEventListener('click', () => {
-//     lightbox.classList.remove('active');
-//     lightboxImg.src = '';
-// })

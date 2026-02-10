@@ -38,6 +38,19 @@ body {
   height: 2px;
   margin: 2rem auto 0;
   background: linear-gradient(90deg, transparent, #6a2fcf, transparent);
+  box-shadow: 0 0 12px rgba(106, 47, 207, 0.35);
+  animation: accentPulse 6s ease-in-out infinite;
+}
+
+@keyframes accentPulse {
+  0%, 100% {
+    box-shadow: 0 0 8px rgba(106, 47, 207, 0.25);
+    opacity: 0.6;
+  }
+  50% {
+    box-shadow: 0 0 22px rgba(106, 47, 207, 0.6);
+    opacity: 1;
+  }
 }
 
 .masonry {
@@ -59,7 +72,8 @@ body {
 
 .masonry img:hover {
   transform: translateY(-2px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.35)
+  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+  filter: drop-shadow(0 0 12px rgba(106,47,207,0.25));
 }
 
 .lightbox {
