@@ -29,3 +29,15 @@ lightbox.addEventListener('click', () => {
     lightbox.classList.remove('active');
     lightboxImg.src = '';
 });
+
+window.addEventListener("mousemove", e => {
+    const x = (e.clientX / window.innerWidth - 0.5) * 10;
+    const y = (e.clientY / window.innerHeight - 0.5) * 10;
+    document.querySelector(".bg-parallax").style.transform = `translate(${x}px, ${y}px)`;
+});
+
+img.style.opacity = "0";
+img.onLoad = () => {
+    img.style.transition = "opacity 0.6s ease";
+    img.style.opacity = "1";
+};
