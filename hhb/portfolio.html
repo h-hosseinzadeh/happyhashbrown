@@ -4,19 +4,55 @@
   <title>Portfolio</title>
   <link rel="stylesheet" href="css/portfolio.css" />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
 </head>
 
 <body>
-    <div class="bg-parallax"></div>
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
 
+    <div class="bg-parallax"></div>
+    
     <header class="portfolio-header">
-        <h1>Selected Works</h1>
+        <h1>Scenes from Elsewhere</h1>
         <p>Illustration . Environment . Mood</p>
     </header>
 
     <div class="header-accent"></div>
-
+    <section class="portfolio-intro">
+        <p>
+            I design automotive-inspired scenes and environments focused on atmosphere, scale, and story.
+            These worlds are built for games, narratives, and moments that feel lived-in.
+        </p>
+    </section>
     <main class="masonry" id="gallery"></main>
+
+    <footer class="portfolio-footer">
+        <p class="signature">
+            I'm Hashem — an artist, author, and game developer exploring worlds, environments, and atmospheric storytelling.
+        </p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/happyhashbrown1/" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            
+            <a href="http://www.youtube.com/@thehappyhashbrown" target="_blank" aria-label="YouTube">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            
+            <a href="https://github.com/h-hosseinzadeh" target="_blank" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+        <p class="copyright">© 2026 Hashem Hosseinzadeh. All artwork shown is original unless otherwise noted</p>
+    </footer>
 
     <div class="lightbox" id="lightbox">
         <div class="lightbox-content">
@@ -29,4 +65,5 @@
     </div>
 
     <script src="js/portfolio.js"></script>
+    <script src="js/navbar.js"></script>
 </body>

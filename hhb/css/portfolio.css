@@ -2,6 +2,23 @@
   box-sizing: border-box;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(255,255,255,0.03), transparent 60%),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255,255,255,0.015),
+      rgba(255,255,255,0.015) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+    pointer-events: none;
+    z-index: 0;
+}
+
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
@@ -26,7 +43,7 @@ body {
 }
 
 .portfolio-header {
-  padding: 6rem 2rem 3rem;
+  padding: 9rem 2rem 3rem;
   text-align: center;
 }
 
@@ -43,6 +60,88 @@ body {
   opacity: 0.7;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+.portfolio-intro{
+  max-width: 720px;
+  margin: 3rem auto 2rem;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.portfolio-intro p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  opacity: 0.75;
+  letter-spacing: 0.05em;
+}
+
+.portfolio-footer {
+  margin-top: 6rem;
+  padding: 4rem 2rem 3rem;
+  text-align: center;
+  position: relative;
+}
+
+.portfolio-footer::before {
+  content: "";
+  display: block;
+  width: 140px;
+  height: 1px;
+  margin: 0 auto 3rem;
+  background: linear-gradient(90deg, transparent, rgba(245,211,0,0.6), transparent);
+  box-shadow: 0 0 12px rgba(245,211,0,0.35);
+}
+
+.signature {
+  max-width: 640px;
+  margin: 0 auto 2.5rem;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  opacity: 0.75;
+  letter-spacing: 0.05em;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.social-links a {
+  font-size: 1.25rem;
+  color: #e6e6e6;
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease,
+    text-shadow 0.25s ease;
+    animation: iconPulse 6s ease-in-out infinite;
+}
+
+@keyframes iconPulse {
+  0%, 100% {
+    text-shadow: none;
+  }
+  50% {
+    text-shadow: 0 0 10px rgba(245, 211, 0, 0.25);
+  }
+}
+
+.social-links a:hover {
+  color: #f5d300;
+  transform: translateY(-3px);
+  text-shadow:
+    0 0 6px rgba(245, 211, 0, 0.6),
+    0 0 18px rgba(245, 211, 0, 0.35);
+}
+
+.copyright {
+  margin-top: 2rem;
+  font-size: 0.75rem;
+  opacity: 0.4;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .header-accent {

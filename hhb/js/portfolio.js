@@ -13,6 +13,11 @@ fetch("js/artworks.json")
             img.alt = art.title;
             img.dataset.title = art.title;
             img.dataset.caption = art.caption;
+            img.style.opacity = "0";
+            img.onload = () => {
+                img.style.transition = "opacity 0.6s ease";
+                img.style.opacity = "1";
+            };
 
             img.addEventListener('click', () => {
                 lightboxImg.src = art.src;
@@ -30,14 +35,14 @@ lightbox.addEventListener('click', () => {
     lightboxImg.src = '';
 });
 
+document.addEventListener('keydown', e => {
+    if (e.key === "Escape") {
+        lightbox.classList.remove('active');
+    }
+});
+
 window.addEventListener("mousemove", e => {
     const x = (e.clientX / window.innerWidth - 0.5) * 10;
     const y = (e.clientY / window.innerHeight - 0.5) * 10;
     document.querySelector(".bg-parallax").style.transform = `translate(${x}px, ${y}px)`;
 });
-
-img.style.opacity = "0";
-img.onLoad = () => {
-    img.style.transition = "opacity 0.6s ease";
-    img.style.opacity = "1";
-};
