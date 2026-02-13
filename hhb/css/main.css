@@ -2,12 +2,13 @@ body {
   margin: 0;
   background: #415a6c;
   overflow-x: hidden;
-  font-family: "orbitron", system-ui, sans-serif;
+  font-family: "Space Grotesk", system-ui, sans-serif;
 }
 
-h1, h2 {
+h1, h2, p{
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  font-family: "Space Grotesk", system-ui, sans-serif;
 }
 
 .hero {
@@ -103,7 +104,6 @@ main {
 }
 
 .hero-content h1 {
-  font-family: "Orbitron", system-ui, sans-serif;
   font-size: clamp(3rem, 6vw, 5rem);
   letter-spacing: 0.08em;
   font-weight: 700;
@@ -111,7 +111,6 @@ main {
 }
 
 .hero-content p {
-  font-family: "Orbitron", system-ui, sans-serif;
   font-size: 1.1rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
@@ -188,6 +187,17 @@ main {
 footer {
   height: 40vh;
   background: #0b0f1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ccc;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+footer .copyright {
+  opacity: 0.7;
+  letter-spacing: 0.05em;
 }
 
 @media  (max-width: 900px) {
