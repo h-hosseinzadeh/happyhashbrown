@@ -2,16 +2,23 @@ body {
   margin: 0;
   background: #415a6c;
   overflow-x: hidden;
+  font-family: "orbitron", system-ui, sans-serif;
+}
+
+h1, h2 {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .hero {
   position: relative;
+  min-height: 100svh;
   height: 100vh;
   overflow: hidden;
 }
 
 main {
-  height: 200vh;
+  height: 140vh;
   background: #0b0f1a;
 }
 
@@ -24,38 +31,47 @@ main {
 .parallax_layer {
   position: absolute;
   inset: 0;
-  bottom: 0;
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
   will-change: transform;
 }
 
 .parallax_layer:nth-child(1) {
   z-index: 1;
-  /* height:100%; */
-  background: linear-gradient(#2b3a42, #1e2a30);
+  background: url("../images/parallax/L1.png") center bottom /cover no-repeat;
 }
 
 .parallax_layer:nth-child(2) {
   z-index: 2;
-  /* height:80%; */
-  background: linear-gradient(to top, #12091f, #1b0f33, #24124a);
+  background: url("../images/parallax/L2.png") center bottom /cover no-repeat;
 }
 
 .parallax_layer:nth-child(3) {
   z-index: 3;
-  /* height:65%; */
-  background: linear-gradient(to top, #1a1238, #2a1b5e, #3b2b7a);
+  background: url("../images/parallax/L3.png") center bottom /cover no-repeat;
 }
 
 .parallax_layer:nth-child(4) {
   z-index: 4;
-  /* height:45%; */
-  background: linear-gradient(to top, #2b1b55, #3f2a8a, #5b3fc4);
+  background: url("../images/parallax/L4.png") center bottom /cover no-repeat;
 }
 
 .parallax_layer:nth-child(5) {
   z-index: 5;
-  /* height:30%; */
-  background: linear-gradient(to top, #3a1b6e, #6a2fcf, #9b4dff);
+  background: url("../images/parallax/L5.png") center bottom /cover no-repeat;
+}
+
+.parallax_fade {
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    transparent 60%,
+    #0b0f1a 100%
+  );
 }
 
 .hero-content {
@@ -66,4 +82,116 @@ main {
   place-content: center;
   color: white;
   text-align: center;
+}
+
+.hero-content .accent {
+  /* text-shadow:
+    0 0 10px rgba(255, 196, 0, 0.6),
+    0 0 20px rgba(255, 196, 0, 0.4),
+    0 0 40px rgba(255, 196, 0, 0.2); */
+    animation: glowPulse 4s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+
+  0%, 100% {
+    text-shadow: 0 0 8px rgba(255, 196, 0, 0.2);
+  }
+  50% {
+    text-shadow: 0 0 30px rgba(255, 196, 0, 0.9);
+  }
+}
+
+.hero-content h1 {
+  font-family: "Orbitron", system-ui, sans-serif;
+  font-size: clamp(3rem, 6vw, 5rem);
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hero-content p {
+  font-family: "Orbitron", system-ui, sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.portfolio-window {
+  height: 70vh;
+  background: url("../images/other/portfolio.png") center center / cover no-repeat;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(111, 211, 255, 0.15);
+  border-bottom: 1px solid rgba(111, 211, 255, 0.15);
+}
+
+.portfolio-window::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 8, 20, 0.6);
+  transition: background 0.4s ease;
+}
+
+.portfolio-window a {
+  display: block;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  color: white;
+}
+
+.window-overlay {
+  height: 100%;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+.portfolio-window:hover::before {
+  background: rgba(5, 8, 20, 0.3);
+}
+
+.portfolio-window:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 60px rgba(111, 211, 255, 0.25);
+  transition: transform 0.6s ease;
+}
+
+.portfolio-window::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg,
+      transparent,
+      rgba(111, 211, 255, 0.2),
+      transparent);
+  transition: left 1.8s ease;
+}
+
+.portfolio-window:hover::after {
+  left: 150%;
+}
+
+.window-overlay h2 {
+  font-size: 2.5rem;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 20px rgba(111, 211, 255, 0.4);
+}
+
+footer {
+  height: 40vh;
+  background: #0b0f1a;
+}
+
+@media  (max-width: 900px) {
+  .parallax_layer {
+    background-position: center center;
+  }
 }

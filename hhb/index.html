@@ -4,7 +4,11 @@
   <title>Parallax Showcase</title>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <nav class="site-nav">
     <div class="nav-inner">
@@ -22,15 +26,27 @@
       <div class="parallax_layer" data-speed="0.35"></div>
       <div class="parallax_layer" data-speed="0.5"></div>
       <div class="parallax_layer" data-speed="0.7"></div>
+      <div class="parallax_fade"></div>
     </div>
 
     <div class="hero-content">
-      <h1>Tokyo wa totemo kirei na mashi desu</h1>
-      <p>El Homme</p>
+      <h1 class="accent">HAPPY HASH BROWN</h1>
+      <p>Imagination Brought to Life</p>
     </div>
   </section>
 
   <main></main>
+
+  <section class="portfolio-window">
+    <a href="portfolio.html">
+      <div class="window-overlay">
+        <h2>Scenes from Elsewhere</h2>
+        <p>Illustration . Environment . Mood</p>
+      </div>
+    </a>
+  </section>
+
+  <footer></footer>
 
   <script src="js/parallax.js"></script>
 </body>
