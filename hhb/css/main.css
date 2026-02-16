@@ -119,7 +119,7 @@ main {
 
 .portfolio-window {
   height: 70vh;
-  background: url("../images/other/portfolio.png") center center / cover no-repeat;
+  background: url("../images/other/window.png") center center / cover no-repeat;
   position: relative;
   overflow: hidden;
   border-top: 1px solid rgba(111, 211, 255, 0.15);

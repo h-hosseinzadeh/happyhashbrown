@@ -2,86 +2,96 @@
   {
     "src": "images/art/f40.jpg",
     "title": "Ferrari F40",
-    "caption": "Automotive · 2022"
+    "caption": "Graphite · Ink · Charcoal ·2022"
   },
   {
     "src": "images/art/mr2.jpg",
     "title": "Toyota MR2",
-    "caption": "Automotive · Environment · 2020"
+    "caption": "Digital · 2020"
   },
   {
-    "src": "images/art/4.jpg",
-    "title": "Rainline District",
-    "caption": "Lighting exploration · 2024"
+    "src": "images/art/miura.jpg",
+    "title": "Lamborghini Miura",
+    "caption": "Digital · 2020"
   },
   {
-    "src": "images/art/5.jpg",
-    "title": "Neon Alley",
-    "caption": "Environment study · 2024"
+    "src": "images/art/laf.jpg",
+    "title": "Ferrari LaFerrari",
+    "caption": "Graphite · 2019"
   },
   {
-    "src": "images/art/6.jpg",
-    "title": "Midnight Crossing",
-    "caption": "Mood piece · 2023"
+    "src": "images/art/portfolio.png",
+    "title": "Industrial Comfort",
+    "caption": "Digital · 2026"
   },
   {
-    "src": "images/art/7.jpg",
-    "title": "Rainline District",
-    "caption": "Lighting exploration · 2024"
+    "src": "images/art/propman.jpg",
+    "title": "Propeller Man Concept",
+    "caption": "Digital · 2019"
   },
   {
-    "src": "images/art/8.jpg",
-    "title": "Neon Alley",
-    "caption": "Environment study · 2024"
+    "src": "images/art/911-acrylic.jpg",
+    "title": "Porsche 911",
+    "caption": "Acrylic · 2025"
   },
   {
-    "src": "images/art/9.jpg",
-    "title": "Midnight Crossing",
-    "caption": "Mood piece · 2023"
+    "src": "images/art/f50.jpg",
+    "title": "Ferrari F50",
+    "caption": "Ink · Charcoal · 2020"
   },
   {
-    "src": "images/art/10.jpg",
-    "title": "Rainline District",
-    "caption": "Lighting exploration · 2024"
+    "src": "images/art/frozeninsoliture.jpeg",
+    "title": "Frozen In Solitude",
+    "caption": "Oil · 2025"
   },
   {
-    "src": "images/art/11.jpg",
-    "title": "Neon Alley",
-    "caption": "Environment study · 2024"
+    "src": "images/art/huracan-glitch.jpg",
+    "title": "Neon Bull",
+    "caption": "Digital · 2022"
   },
   {
-    "src": "images/art/12.jpg",
-    "title": "Midnight Crossing",
-    "caption": "Mood piece · 2023"
+    "src": "images/art/evo8.jpg",
+    "title": "Mitsubishi Lancer Evolution VIII",
+    "caption": "Graphite · 2023"
   },
   {
-    "src": "images/art/13.jpg",
-    "title": "Rainline District",
-    "caption": "Lighting exploration · 2024"
+    "src": "images/art/col.jpeg",
+    "title": "Legends on Wheels",
+    "caption": "Mixed Media · 2024"
   },
   {
-    "src": "images/art/14.jpg",
-    "title": "Neon Alley",
-    "caption": "Environment study · 2024"
+    "src": "images/art/nvaventador.jpg",
+    "title": "Dormant Bull",
+    "caption": "Digital · 2022"
   },
   {
-    "src": "images/art/15.jpg",
-    "title": "Midnight Crossing",
-    "caption": "Mood piece · 2023"
+    "src": "images/art/thelastvigil.jpg",
+    "title": "The Last Vigil",
+    "caption": "Watercolor · Graphite · 2025"
   },
   {
-    "src": "images/art/16.jpg",
-    "title": "Rainline District",
-    "caption": "Lighting exploration · 2024"
+    "src": "images/art/americanmuscle.jpeg",
+    "title": "American Muscle",
+    "caption": "Graphite · 2026"
   },
   {
-    "src": "images/art/17.jpg",
-    "title": "Neon Alley",
-    "caption": "Environment study · 2024"
+    "src": "images/art/diablogtr.jpg",
+    "title": "Lamborghini Diablo GT-R",
+    "caption": "Ink · Graphite · 2024"
   },
   {
-    "src": "images/art/18.jpg",
-    "title": "Midnight Crossing",
-    "caption": "Mood piece · 2023"
+    "src": "images/art/sp3.jpeg",
+    "title": "Ferrari Daytona SP3",
+    "caption": "Ink · Graphite · 2025"
+  },
+  {
+    "src": "images/art/verdantbeast.jpeg",
+    "title": "Verdant Beast",
+    "caption": "Acrylic · 2025"
+  },
+  {
+    "src": "images/art/z4.jpg",
+    "title": "BMW Z4",
+    "caption": "Graphite · 2021"
   }
 ]
