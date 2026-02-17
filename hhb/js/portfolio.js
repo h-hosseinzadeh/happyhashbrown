@@ -5,7 +5,10 @@ const lightboxTitle = document.getElementById('lightbox-title');
 const lightboxCaption = document.getElementById('lightbox-caption');
 
 fetch("js/artworks.json")
-    .then(res => res.json())
+    .then(res => {
+        if (!res.ok) throw new Error("Failed to load artworks.json");
+        return res.json();
+    })
     .then(artworks => {
         artworks.forEach(art => {
             const img = document.createElement("img");
@@ -28,6 +31,9 @@ fetch("js/artworks.json")
 
             gallery.appendChild(img);
         });
+    })
+    .catch(err => {
+        console.error("Error loading artworks:", err);
     });
 
 lightbox.addEventListener('click', () => {
