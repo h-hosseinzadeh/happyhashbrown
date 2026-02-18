@@ -14,7 +14,7 @@ h1, h2, p{
 .hero {
   position: relative;
   min-height: 100svh;
-  height: 100vh;
+  height: 100svh;
   overflow: hidden;
 }
 

@@ -1,71 +1,71 @@
 [
   {
-    "src": "images/art/f40.jpg",
+    "src": "images/art/f40.webp",
     "title": "Ferrari F40",
     "caption": "Graphite · Ink · Charcoal ·2022"
   },
   {
-    "src": "images/art/mr2.jpg",
+    "src": "images/art/mr2.webp",
     "title": "Toyota MR2",
     "caption": "Digital · 2020"
   },
   {
-    "src": "images/art/miura.jpg",
+    "src": "images/art/miura.webp",
     "title": "Lamborghini Miura",
     "caption": "Digital · 2020"
   },
   {
-    "src": "images/art/laf.jpg",
+    "src": "images/art/laf.webp",
     "title": "Ferrari LaFerrari",
     "caption": "Graphite · 2019"
   },
   {
-    "src": "images/art/portfolio.png",
+    "src": "images/art/portfolio.webp",
     "title": "Industrial Comfort",
     "caption": "Digital · 2026"
   },
   {
-    "src": "images/art/propman.jpg",
+    "src": "images/art/propman.webp",
     "title": "Propeller Man Concept",
     "caption": "Digital · 2019"
   },
   {
-    "src": "images/art/911-acrylic.jpg",
+    "src": "images/art/911-acrylic.webp",
     "title": "Porsche 911",
     "caption": "Acrylic · 2025"
   },
   {
-    "src": "images/art/f50.jpg",
+    "src": "images/art/f50.webp",
     "title": "Ferrari F50",
     "caption": "Ink · Charcoal · 2020"
   },
   {
-    "src": "images/art/frozeninsoliture.jpeg",
+    "src": "images/art/frozeninsolitude.webp",
     "title": "Frozen In Solitude",
     "caption": "Oil · 2025"
   },
   {
-    "src": "images/art/huracan-glitch.jpg",
+    "src": "images/art/huracan-glitch.webp",
     "title": "Neon Bull",
     "caption": "Digital · 2022"
   },
   {
-    "src": "images/art/evo8.jpg",
+    "src": "images/art/evo8.webp",
     "title": "Mitsubishi Lancer Evolution VIII",
     "caption": "Graphite · 2023"
   },
   {
-    "src": "images/art/col.jpeg",
+    "src": "images/art/col.webp",
     "title": "Legends on Wheels",
     "caption": "Mixed Media · 2024"
   },
   {
-    "src": "images/art/nvaventador.jpg",
+    "src": "images/art/nvaventador.webp",
     "title": "Dormant Bull",
     "caption": "Digital · 2022"
   },
   {
-    "src": "images/art/thelastvigil.jpg",
+    "src": "images/art/thelastvigil.webp",
     "title": "The Last Vigil",
     "caption": "Watercolor · Graphite · 2025"
   },
@@ -75,22 +75,22 @@
     "caption": "Graphite · 2026"
   },
   {
-    "src": "images/art/diablogtr.jpg",
+    "src": "images/art/diablogtr.webp",
     "title": "Lamborghini Diablo GT-R",
     "caption": "Ink · Graphite · 2024"
   },
   {
-    "src": "images/art/sp3.jpeg",
+    "src": "images/art/sp3.webp",
     "title": "Ferrari Daytona SP3",
     "caption": "Ink · Graphite · 2025"
   },
   {
-    "src": "images/art/verdantbeast.jpeg",
+    "src": "images/art/verdantbeast.webp",
     "title": "Verdant Beast",
     "caption": "Acrylic · 2025"
   },
   {
-    "src": "images/art/z4.jpg",
+    "src": "images/art/z4.webp",
     "title": "BMW Z4",
     "caption": "Graphite · 2021"
   }

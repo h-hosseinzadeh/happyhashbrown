@@ -13,6 +13,8 @@ fetch("js/artworks.json")
         artworks.forEach(art => {
             const img = document.createElement("img");
             img.src = art.src;
+            img.loading = "lazy";
+            img.decoding = "async";
             img.alt = art.title;
             img.dataset.title = art.title;
             img.dataset.caption = art.caption;
